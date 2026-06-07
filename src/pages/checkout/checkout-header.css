@@ -39,20 +39,6 @@
    website look good on any screen size). This @media
    means when the screen width is 575px or less, different
    styles (inside the {...}) will be applied. */
-@media (max-width: 575px) {
-  .checkout-header .checkout-header-left-section {
-    width: auto;
-  }
-
-  .checkout-header .logo {
-    display: none;
-  }
-
-  .checkout-header .mobile-logo {
-    display: inline-block;
-    height: 26px;
-  }
-}
 
 .checkout-header .checkout-header-middle-section {
   flex: 1;
@@ -67,7 +53,7 @@
 }
 
 .checkout-header .return-to-home-link {
-  color: rgb(25, 135, 84);
+  color: rgb(25, 95, 135);
 
   text-decoration: none;
   cursor: pointer;

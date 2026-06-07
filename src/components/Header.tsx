@@ -34,8 +34,7 @@ export default function Header({cartItems, setSearchedProduct}: HeaderProps) {
       <div className="header">
         <div className="left-section">
           <Link to="/" className="header-link" onClick={clearSearchProduct}>
-            <img className="logo" src="images/logo-white.png" />
-            <img className="mobile-logo" src="images/mobile-logo-white.png" />
+            <img className="logo" src="images/icons/back-icon.png" />
           </Link>
         </div>
 
@@ -56,11 +55,19 @@ export default function Header({cartItems, setSearchedProduct}: HeaderProps) {
         </div>
 
         <div className="right-section">
-          <Link className="orders-link header-link" to="/orders">
+          <Link
+            className="orders-link header-link"
+            to="/orders"
+            onClick={clearSearchProduct}
+          >
             <span className="orders-text">Orders</span>
           </Link>
 
-          <Link className="cart-link header-link" to="/checkout">
+          <Link
+            className="cart-link header-link"
+            to="/checkout"
+            onClick={clearSearchProduct}
+          >
             <img className="cart-icon" src="images/icons/cart-icon.png" />
             <div className="cart-quantity">{totalQuantity}</div>
             <div className="cart-text">Cart</div>

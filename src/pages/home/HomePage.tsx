@@ -41,7 +41,7 @@ export default function HomePage(props: HomePageProps) {
 
   return (
     <>
-      <title>Ecom</title>
+      <title>E-Commerce Website</title>
 
       <div className="home-page">
         <ProductsGrid products={searchedData} loadCart={loadCart} />

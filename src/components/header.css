@@ -1,5 +1,5 @@
 .header {
-  background-color: rgb(8, 79, 45);
+  background-color: hsl(202, 69%, 21%);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -13,6 +13,7 @@
   left: 0;
   right: 0;
   height: 60px;
+  z-index: 100;
 }
 
 .header .left-section {
@@ -47,18 +48,6 @@
   display: none;
 }
 
-@media (max-width: 675px) {
-  .header .logo {
-    display: none;
-  }
-
-  .header .mobile-logo {
-    display: block;
-    height: 26px;
-    margin-top: 1px;
-  }
-}
-
 .header .middle-section {
   flex: 1;
   max-width: 850px;
@@ -81,7 +70,7 @@
 }
 
 .header .search-button {
-  background-color: rgb(186, 255, 190);
+  background-color: hsl(202, 69%, 71%);
   border: none;
   width: 45px;
   height: 40px;
@@ -136,7 +125,7 @@
 }
 
 .header .cart-quantity {
-  color: rgb(8, 79, 45);
+  color: hsl(202, 69%, 16%);
   font-size: 14px;
   font-weight: 700;
 

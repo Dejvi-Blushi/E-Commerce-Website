@@ -4,6 +4,7 @@ import HomePage from "../pages/home/HomePage";
 import CheckoutPage from "../pages/checkout/CheckoutPage";
 import OrdersPage from "../pages/orders/OrdersPage";
 import TrackingPage from "../pages/tracking/TrackingPage";
+import AboutPage from "../pages/about/AboutPage";
 import type {CartItemExpanded, Product, loadCartFn} from "../types/types";
 
 type AppRoutesProps = {
@@ -49,6 +50,7 @@ export default function AppRoutes(props: AppRoutesProps) {
         />
         <Route path="orders" element={<OrdersPage loadCart={loadCart} />} />
         <Route path="tracking" element={<TrackingPage />} />
+        <Route path="about" element={<AboutPage />} />
       </Route>
 
       <Route

@@ -22,7 +22,8 @@ export default function TrackingPage() {
 
   const location = useLocation();
 
-  const {productImage, productDeliveryTime} = location.state as LocationState;
+  const {productImage, productDeliveryTime} =
+    (location.state as LocationState) || "";
 
   return (
     <>

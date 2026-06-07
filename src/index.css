@@ -5,7 +5,11 @@ body {
      on all sides. This removes the default margins. */
   margin: 0;
 }
-
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 /* Remove the default margins of <p> elements. */
 p {
   margin: 0;
@@ -28,7 +32,7 @@ button {
 
 .button-primary {
   color: rgb(255, 255, 255);
-  background-color: rgb(25, 135, 84);
+  background-color: rgb(25, 95, 135);
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
@@ -36,12 +40,12 @@ button {
 }
 
 .button-primary:hover {
-  background-color: rgba(25, 135, 84, 0.75);
+  background-color: hsl(202, 69%, 26%);
   border: 1px solid transparent;
 }
 
 .button-primary:active {
-  background: rgba(25, 135, 84, 0.5);
+  background: hsl(202, 69%, 21%);
   border-color: transparent;
   box-shadow: none;
 }
@@ -77,7 +81,7 @@ button {
 }
 
 .link-primary {
-  color: rgb(25, 135, 84);
+  color: rgb(25, 95, 135);
   cursor: pointer;
 }
 
@@ -103,5 +107,5 @@ select {
 
 select:focus,
 input:focus {
-  outline: 2px solid rgb(25, 135, 84);
+  outline: 2px solid rgb(25, 95, 135);
 }

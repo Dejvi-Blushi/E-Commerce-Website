@@ -1,5 +1,6 @@
 import {Outlet} from "react-router";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import type {CartItem} from "../types/types";
 
 type LayoutProps = {
@@ -11,7 +12,10 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
       <Header {...props} />
-      <Outlet />
+      <section style={{flex: 1}}>
+        <Outlet />
+      </section>
+      <Footer />
     </>
   );
 }
